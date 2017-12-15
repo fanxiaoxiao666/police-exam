@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>政法干警考试</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+</head>
+<script src="js/angular.min.js"></script>
+<body>
+    <div id="head" class="w">
+        <h2>
+            <img src="img/logo.png">
+        </h2>
+        <ul>
+            <li><a href="javascript:''" class="active" target="_blank">政法干警考试网</a></li>
+            <li><a href="javascript:''" target="_blank">中公首页</a></li>
+            <li><a href="javascript:''" target="_blank">面授课程</a></li>
+            <li><a href="javascript:''" target="_blank">图书商城</a></li>
+            <li><a href="javascript:''" target="_blank">网校课程</a></li>
+            <li><a href="javascript:''" id="a1" target="_blank">联系我们</a></li>
+        </ul>
+        <div class="contact">400-6300-999</div>
+    </div>
+    <div id="banner" >
+        <div class="w">
+            <img src="img/banner_useful_03.jpg">
+            <img src="img/banner_useful_05.jpg">
+            <img src="img/banner_useful_06.jpg">
+        </div>
+    </div>
+    <div id="baokao" class="w" ng-controller="myController">
+        <h3>报考省份</h3>
+        <ul class="clear">
+            <li ng-repeat="v in data" ng-class="{li1:($index+1)%9==0,active:Curcity==v}" ng-click="change(v)"><a >{{v.title}}</a></li>
+        </ul>
+        <div class="wrap clear">
+            <div class="print"  >
+                <img src="img/8_03.jpg">
+                <div class="anhui">{{Curcity.title}}</div>
+                <div class="time">准考证打印时间:<span>9月21日-9月23日</span></div>
+                <div class="kaoshi">
+                        <a href="{{Curcity.url1}}">【{{Curcity.gonggao}}】</a>
+                    <a href="{{Curcity.url2}}">【考试大纲】</a>
+                    <a href="{{Curcity.url3}}">【考前冲刺题】</a>
+                </div>
+                <a href="javascript:;"><div class="entrance">准考证打印入口</div></a>
+            </div>
+            <div class="empty swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/pic1.jpg"></div>
+                    <div class="swiper-slide" ><img src="img/pic2.jpg"></div>
+                    <div class="swiper-slide" ><img src="img/pic3.jpg"></div>
+                    <div class="swiper-slide" ><img src="img/pic4.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="mianfei">
+        <div class="w fuli">
+            <h3>免费享福利 考前大放送</h3>
+            <div class="lecture">
+                <img src="img/zfgj__28.jpg">
+            </div>
+            <ul class="list">
+                <li id="a2" ><img src="img/jian_03.png"><a href="javascript:;" >8月5日：陕西政法干警专项备考免费讲座(行测-逻辑判断)</a></li>
+                <li><img src="img/jian_03.png"><a href="javascript:;">8月5日：陕西政法干警专项备考免费讲座(行测-逻辑判断)</a></li>
+                <li><img src="img/jian_03.png"><a href="javascript:;">8月5日：陕西政法干警专项备考免费讲座(行测-逻辑判断)</a></li>
+                <li><img src="img/jian_03.png"><a href="javascript:;">8月5日：陕西政法干警专项备考免费讲座(行测-逻辑判断)</a></li>
+                <li><img src="img/jian_03.png"><a href="javascript:;">8月5日：陕西政法干警专项备考免费讲座(行测-逻辑判断)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="w banci">
+        <h3>临考冲刺 祝你成功</h3>
+        <div class="wrap clear">
+            <div id="first">
+                成警实战冲刺班
+            </div>
+            <div id="second">
+                <p>系统精讲</p>
+                <p>专项提升</p>
+                <p>讲练结合</p>
+                <p>封闭预测</p>
+                <p>网校+面试</p>
+            </div>
+            <div id="third">
+                政法干警面试热点：社区养老院为啥被嫌弃政法干警面试热点：社区养老院为啥被嫌弃政法干警面试热点：社区养老院为啥被嫌弃
+            </div>
+            <div id="fourth">
+                <p>政法干警面试热点：社区养老院为啥被嫌弃政法干警面试热点：社区养老院为啥被嫌弃</p>
+            </div>
+            <div id="fifth">
+                <a href="javascript:;" id="a4">咨询</a>
+                <a href="javascript:;">购买</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <p>400-6300-999</p>
+        <div class="zixun">
+            <img src="img/kczx_08.png">
+        </div>
+        <div class="qq">
+            <img src="img/qrcode_08.jpg">
+        </div>
+        <div class="weixin">
+            <img src="img/qrcode_11.jpg">
+        </div>
+
+    </div>
+    <div id="foot">
+        <div class="w">
+            <p><a href="javascript:;" target="_blank">中公简介</a><a href="javascript:;"  target="_blank">中公荣誉</a><a href="javascript:;"  target="_blank">社会责任</a><a href="javascript:;"  target="_blank">媒体聚焦</a><a href="javascript:;"  target="_blank">联系我们</a><a href="javascript:;"  target="_blank">版权声明</a><a
+                    href="javascript:;"  target="_blank">支付方式</a><a href="javascript:;"  target="_blank">友情链接</a><a href="javascript:;"  target="_blank">网站导航</a><a href="javascript:;"  target="_blank">加入我们</a></p>
+
+            <p>Copyright©1999-2017 北京中公教育科技股份有限公司 .All Rights Reserved</p>
+            <p>全国统一报名专线：400-6300-999 网校报名：400-900-8885 图书订购：400-6509-705</p>
+            <p>京ICP备10218183号 京ICP证161188号  京公网安备 11010802020593号 出版物经营许可证新出发京批字第直130052号</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var app=angular.module("myApp",[]);
+    app.controller("myController",function($scope)
+    {
+        $scope.data=[
+            {title:"安徽",url1:"www.baidu.com",gonggao:"安徽政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+            {title:"北京",url1:"www.offcn.com",gonggao:"北京政法干警考试公告",url2:"www.baidu.com",url3:"www.offcn.com"},
+
+        ]
+        $scope.Curcity=$scope.data[0]
+        $scope.change=function(city)
+    {
+        $scope.Curcity=city
+    }
+    })
+
+    var swiper=new Swiper(".swiper-container",{
+        pagination:".swiper-pagination",
+        paginationClickable:true,
+        nextButton:".swiper-button-next",
+        prevButton:".swiper-button-prev",
+        paginationType: 'fraction',
+        autoplay:2500,
+        autoplayDisableOnInteraction: false
+    })
+
+
+</script>

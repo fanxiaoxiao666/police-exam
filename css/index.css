@@ -1,0 +1,72 @@
+*{margin:0;padding:0}
+.w{width:980px;margin:0 auto}
+img{vertical-align: top}
+a{text-decoration: none;}
+ul{list-style: none}
+.clear:after{content:"";display: block;clear:both}
+#head{height:60px;}
+#head h2,#head ul{float:left;padding-top:28px}
+#head h2{margin-right:52px;padding-top:12px;}
+#head ul li{float:left;}
+#head ul li a{font-size: 14px;padding-left:18px;padding-right:18px;color:#666;border-right:1px solid #838383;
+display: block;height:16px;line-height: 16px}
+#head #a1{border-right:none;padding-right:88px}
+#head .contact{float:right;padding-top:28px;color:#a9a9a9}
+
+#banner{height:412px;background: url(../img/banner_02.jpg)no-repeat center}
+
+#baokao{height:478px;padding-top:78px;padding-bottom:78px}
+#baokao h3{color: #9a0410;font-size: 44px;text-align: center;margin-bottom:40px;background: url("../img/baokao.jpg")no-repeat center}
+#baokao ul{margin-bottom: 27px}
+#baokao ul li{float:left;width: 90px;height:40px;background: #eeeeee;margin-right: 20px;line-height: 40px;text-align: center;
+margin-bottom: 16px}
+#baokao ul li.li1{margin-right:0}
+#baokao ul li.active{background:#9a0410}
+#baokao ul li a{font-size: 21px;color:#8f8f8f;cursor: pointer}
+#baokao .print{padding:20px;position:relative;float:left;width:504px;border-top:1px solid #bab9b9;border-bottom: 1px solid #bab9b9;
+background: #eeeeee}
+#baokao .print a{font-size: 18px;color:#000;}
+#baokao .print .anhui{font-size: 20px;color:#fff;width:82px;height: 32px;background: url("../img/province_03.png")no-repeat;
+text-align: center;line-height: 32px;margin-bottom: 20px}
+#baokao .print .time{font-size: 18px;margin-bottom: 20px}
+#baokao .print .time{font-size: 18px;color:#717171}
+#baokao .print .time span{color:#000}
+#baokao .print .entrance{height:76px;color:#fff;font-size: 30px;text-align: center;line-height: 76px;background: #e00447;
+border-radius: 5px}
+#baokao .kaoshi{margin-bottom: 20px}
+#baokao .kaoshi a{text-align: left}
+
+#baokao .empty{float:right;width:414px;height:258px;background: #eee}
+#baokao img{position: absolute;top:-13px}
+
+.mianfei{height: 446px;background: url("../img/zfgj_01.jpg")no-repeat center}
+.fuli{overflow: hidden}
+.mianfei h3{margin-top:60px;margin-bottom:40px;color: #9a0410;font-size: 44px;text-align: center;background: url("../img/8_03.png")no-repeat center;}
+
+.mianfei .lecture{float:left}
+.mianfei .list{float:right;height:203px;width:482px;padding:9px 24px 20px 24px;background: #fff}
+.mianfei .list li{border-top:1px dashed #ccc;border-bottom:1px dashed #ccc;padding-bottom: 10px;padding-top: 10px;position: relative}
+.mianfei .list li img{position:absolute;left:-18px;top:12px;display: none}
+.mianfei .list li:hover img{display: block}
+.mianfei .list li:hover a{color:#d52a32}
+.mianfei .list li a{font-size: 18px;color:#b7b7b7}
+.banci{overflow: hidden}
+.banci h3{margin-top:78px;margin-bottom:42px;text-align: center;font-size: 44px;color: #9a0410;background: url("../img/8_03.png")no-repeat center;}
+
+.banci .wrap div{height: 158px;float:left;text-align: center;font-size: 16px;color:#313030}
+.banci .wrap #first{width:176px;border:1px solid #ffcbcf;line-height: 158px}
+.banci .wrap #second{width:130px;padding-top:20px;padding-bottom:20px;height:118px;border-top:1px solid #ffcbcf;border-bottom:1px solid #ffcbcf;border-right:1px solid #ffcbcf}
+.banci .wrap #third{width:264px;height:112px;border:1px solid #ffcbcf;border-left:none;text-align: left;padding-right: 18px;padding-left: 18px;padding-top: 46px}
+.banci .wrap #fourth{width:228px;height:133px;border:1px solid #ffcbcf;border-left:none;padding:25px 18px 0 18px;text-align: left}
+.banci .wrap #fifth{width:100px;border:1px solid #ffcbcf;border-left:none}
+.banci .wrap #fifth a{display: block;width: 64px;height: 34px;line-height:34px;color:#fbf4f4;background: #d20513;border-radius: 5px;margin:0 auto}
+.banci .wrap #fifth #a4{margin-bottom: 12px;margin-top: 39px}
+
+.sidebar{width:162px;height:474px;position: fixed;right:0;top:100px;background: #eeeeee;box-shadow: -4px -4px 1px #ededed}
+.sidebar p{height:36px;text-align: center;color: #fff;font-size: 14px;line-height: 36px;background: #9a0410}
+.sidebar .zixun{width:110px;padding-top:20px;padding-bottom: 20px;margin: 0 auto}
+.sidebar .qq{width:122px;margin: 0 auto;padding-bottom:20px}
+.sidebar .weixin{width:122px;margin: 0 auto}
+#foot{height:128px;color: #6a6a6a;font-size: 14px;background: #2a2a2a;padding-top: 32px;margin-top:80px}
+#foot p{text-align: center;line-height: 22px}
+#foot p a{padding-left:5px;padding-right: 5px;border-right:1px solid #6a6a6a;color: #6a6a6a;height:14px;line-height:14px;display: inline-block}
